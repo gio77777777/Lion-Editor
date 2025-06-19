@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lion Editor</title>
+    <link rel="icon" type="image/png" href="lion logo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Background Remover</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+  <div class="container">
+    <h1>Image Background Remover</h1>
+
+    <input type="file" id="upload" accept="image/*" />
+    <button onclick="removeBackground()">Remove Background</button>
+
+    <div class="images">
+      <div>
+        <h3>Original Image</h3>
+        <img id="original" />
+      </div>
+      <div>
+        <h3>Without Background</h3>
+        <img id="result" />
+        <a id="download-btn" href="#" download="no-bg.png" style="display: none;">
+          <button class="download-button">⬇️ Download Image</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
